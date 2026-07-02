@@ -1,0 +1,20 @@
+# ESP32 DHT11 Temperature & Humidity Monitor
+
+A basic ESP32 project that reads temperature and humidity from a DHT11 sensor and displays the values on the Serial Monitor every 2 seconds.
+
+## What I Learned
+
+* `#include <DHT.h>` – Using external libraries
+* `DHT dht(26, DHT11)` – Creating a DHT sensor object
+* `dht.begin()` – Initializing the sensor
+* `dht.readTemperature()` – Reading temperature data
+* `dht.readHumidity()` – Reading humidity data
+* `Serial.begin(115200)` – Starting serial communication
+* `Serial.print()` and `Serial.println()` – Displaying data on the Serial Monitor
+* `delay()` – Controlling the reading interval
+
+## How It Works
+
+The ESP32 initializes the DHT11 sensor, reads temperature and humidity every 2 seconds, and prints the values to the Serial Monitor.
+
+
